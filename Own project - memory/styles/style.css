@@ -1,0 +1,84 @@
+.game-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 0 10px;
+    transition: opacity 0.4s ease;
+}
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s 0.4s ease;
+}
+
+.cards.shake {
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-13px);
+    }
+
+    40% {
+        transform: translateX(13px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+.cards .view {
+    user-select: none;
+    pointer-events: none;
+    backface-visibility: hidden;
+    transition: transform 0.25s linear;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+
+.cards .back-view {
+    transform: rotateY(-180deg);
+}
+
+.cards.flip .front-view {
+    transform: rotateY(180deg);
+}
+
+.cards.flip .back-view {
+    transform: rotateY(0);
+}
+
+.cards {
+    position: relative;
+    display: block;
+}
+
+.back-view {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+}

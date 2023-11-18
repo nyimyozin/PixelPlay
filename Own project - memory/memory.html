@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../images/favicon.ico">
+</head>
+
+<body class="web-bg ">
+    <div class="navbar web-bg3 mb-5 p-2 shadow sticky-top ">
+        <div class="container d-flex justify-content-center">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <a href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="logo"></a>
+            </div>
+            <div class="col-auto d-flex ms-auto">
+                <button id="theme" class="btn shadow rounded-5">
+                    <img src="../images/brightness-and-contrast.png" style="width: 3rem;">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="p-5">
+        <div class="game-modal d-flex flex-column p-5 justify-content-center">
+            <div class="col-lg-3 web-bg3 rounded-5 p-5 ">
+                <div class="col container d-flex justify-content-center">
+                    <img class="img-fluid" src="images/game-over.png" alt="game over img">
+                </div>
+                <div class="content">
+                    <h4 class="text-clr">Game Over!</h4>
+                    <p class="text-clr">The correct word was: <b>rainbow</b></p>
+                    <button class="play-again btn btn-info shadow" data-dismiss="game-modal">Play Again</button>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex flex-column align-items-center web-bg2 rounded-5 p-lg-5 shadow ">
+            <div class="container d-flex flex-column align-items-center justify-content-center web-bg3 rounded-5 pb-5 pt-5 p-lg-5 shadow ">
+                <div class="container d-flex justify-content-center">
+                    <div class="col">
+                        <div class="row justify-content-center">
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-1 p-2">
+                                <div class="cards">
+                                    <div class="view front-view">
+                                        <img class="img-fluid" src="images/ques_mark.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img class="img-fluid" src="images/img-1.png" alt="card-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="details">
+                    <p class="time fs-4 text-clr">Time: <span><b>20</b>s</span></p>
+                    <p class="flips fs-4 text-clr">Flips: <span><b>0</b></span></p>
+                    <button class="btn btn-info shadow">Refresh</button>
+                </div>
+            </div>
+            <div class="web-bg3 rounded-5 p-5 container mt-5 shadow text-clr ">
+                <h2>How to Play Memory Game</h2>
+                <p>
+                    Welcome to the Memory Game, where you can challenge your memory and have a great time. Here's how to play
+                    like a pro:
+                </p>
+                <ol>
+                    <li><strong>Goal:</strong> Your mission is to uncover and match all the pairs of cards before the clock runs
+                        out.</li>
+                    <li><strong>Getting Started:</strong> As soon as you begin, you'll be presented with a grid of cards, each
+                        hiding a unique image. Your mission is to flip them over and discover matching pairs.</li>
+                    <li><strong>Flipping Magic:</strong> To unveil a card's hidden image, just give it a click. It will
+                        gracefully flip over, revealing its secret content.</li>
+                    <li><strong>Pairing Wonders:</strong> Your quest is to find two cards with identical images. Once you do,
+                        they will remain face up, celebrating your keen eye.</li>
+                    <li><strong>Time and Expertise:</strong> Keep an eye on the clock and aim to solve the puzzle with as few
+                        flips as possible. Speed and precision will be your best allies.</li>
+                    <li><strong>Starting Fresh:</strong> Ready for a new challenge? Just hit that "Refresh" button, and the game
+                        will reset for another round of fun.</li>
+                    <li><strong>Victory Dance:</strong> The ultimate triumph is achieved when you match all the pairs before the
+                        timer expires. Victory is sweet!</li>
+                    <li><strong>Card Shuffle:</strong> With every game, the cards get shuffled, providing a fresh and exciting
+                        experience each time you play.</li>
+                    <li><strong>Rising Challenges:</strong> As you progress, brace yourself for more cards and increased
+                        difficulty. The game keeps testing your memory skills.</li>
+                </ol>
+                <p>That's how you become a Memory Game master. Go ahead, challenge yourself, and let the games begin!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="scripts/script.js"></script>
+<script src="../scripts/script.js"></script>
+
+</html>

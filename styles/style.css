@@ -1,0 +1,51 @@
+.light-web-bg {
+    background-color: #87C4FF;
+}
+
+.light-web-bg2 {
+    background-color: #E0F4FF;
+}
+
+.light-web-bg3 {
+    background-color: #fcf2e6;
+}
+
+.dyn-card {
+    transition: transform 400ms ease;
+}
+
+.dark-web-bg {
+    background-color: #28313a;
+}
+
+.dark-web-bg2 {
+    background-color: #2c2f30;
+}
+
+.dark-web-bg3 {
+    background-color: #302e2d;
+}
+
+.text-wt {
+    color: black;
+}
+
+.text-dark {
+    color: white;
+}
+  
+
+.dyn-card:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    transition: transform 400ms ease;
+}
+
+.div-link {
+    text-decoration: none;
+    color: black;
+}
+
+.transition {
+    transition: all 0.5s ease;
+  }

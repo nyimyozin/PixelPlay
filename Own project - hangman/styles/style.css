@@ -1,0 +1,43 @@
+.game-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 0 10px;
+    transition: opacity 0.4s ease;
+}
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s 0.4s ease;
+}
+.word-display .letter {
+    width: 28px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-right: 5px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000;
+}
+
+.word-display .letter.guessed {
+    margin-top: -0.9rem;
+    border-color: transparent;
+}
+:where(.game-modal, .keyboard) button {
+    text-transform: uppercase;
+}
+.keyboard button {
+    padding: 7px;
+    width: calc(100% / 7 - 5px);
+}
